@@ -17,9 +17,11 @@ while IFS=$"\n" read -r image; do
     docker image tag $pull_from $push_to-$platform_safe
     docker image push $push_to-$platform_safe
 
-    amends+="--amend $push_to-$platform_safe"
+    amends+="--amend $push_to-$platform_safe "
 
   done <<< "$platforms"
+
+  echo Amend flags: $amends
 
   docker manifest create $push_to $amends
   docker manifest push $push_to

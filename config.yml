@@ -6,49 +6,49 @@ images:
       - linux/arm64
     
   - pull_from: docker.io/grafana/grafana-image-renderer:latest
-    push_to: ghcr.io/pmh-only/grafana-image-renderer:latestt
+    push_to: ghcr.io/pmh-only/grafana-image-renderer:latest
     platforms:
       - linux/amd64
       - linux/arm64
 
   - pull_from: docker.io/grafana/grafana:latest
-    push_to: ghcr.io/pmh-only/grafana:latestt
+    push_to: ghcr.io/pmh-only/grafana:latest
     platforms:
       - linux/amd64
       - linux/arm64
 
   - pull_from: docker.io/grafana/loki:latest
-    push_to: ghcr.io/pmh-only/loki:latestt
+    push_to: ghcr.io/pmh-only/loki:latest
     platforms:
       - linux/amd64
       - linux/arm64
 
   - pull_from: docker.io/grafana/mimir:latest
-    push_to: ghcr.io/pmh-only/mimir:latestt
+    push_to: ghcr.io/pmh-only/mimir:latest
     platforms:
       - linux/amd64
       - linux/arm64
 
   - pull_from: docker.io/mongo:latest
-    push_to: ghcr.io/pmh-only/mongo:latestt
+    push_to: ghcr.io/pmh-only/mongo:latest
     platforms:
       - linux/amd64
       - linux/arm64
 
   - pull_from: docker.io/mysql:8
-    push_to: ghcr.io/pmh-only/mysql:8t
+    push_to: ghcr.io/pmh-only/mysql:8
     platforms:
       - linux/amd64
       - linux/arm64
     
   - pull_from: docker.io/redis:alpine
-    push_to: ghcr.io/pmh-only/redis:alpinet
+    push_to: ghcr.io/pmh-only/redis:alpine
     platforms:
       - linux/amd64
       - linux/arm64
 
   - pull_from: docker.io/ghost:alpine
-    push_to: ghcr.io/pmh-only/ghost:alpinet
+    push_to: ghcr.io/pmh-only/ghost:alpine
     platforms:
       - linux/amd64
       - linux/arm64
