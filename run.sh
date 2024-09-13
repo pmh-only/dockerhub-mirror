@@ -11,13 +11,13 @@ while IFS=$"\n" read -r image; do
   amends=""
 
   while IFS=$"\n" read -r platform; do
-    echo $pull_from $platform
+    platform_safe=$(sed 's/\//-/' <<< "$platform")
 
     docker image pull $pull_from --platform $platform
-    docker image tag $pull_from $push_to-$platform
-    docker image push $push_to-$platform
+    docker image tag $pull_from $push_to-$platform_safe
+    docker image push $push_to-$platform_safe
 
-    amends+="--amend $push_to-$platform"
+    amends+="--amend $push_to-$platform_safe"
 
   done <<< "$platforms"
 
