@@ -1,7 +1,6 @@
 #!/bin/bash
 
-alias yaml2json="python -c 'import sys,yaml,json; print(json.dumps(yaml.safe_load(str(sys.stdin.read()))))'"
-config=$(cat config.yml | yaml2json)
+config=$(cat config.yml | python -c 'import sys,yaml,json; print(json.dumps(yaml.safe_load(str(sys.stdin.read()))))')
 images=$(jq ".images[]" -c <<< "$config")
 
 while IFS=$"\n" read -r image; do
@@ -12,6 +11,7 @@ while IFS=$"\n" read -r image; do
   amends=""
 
   while IFS=$"\n" read -r platform; do
+    echo $pull_from $platform
 
     docker image pull $pull_from --platform $platform
     docker image tag $pull_from $push_to-$platform
