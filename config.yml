@@ -64,3 +64,10 @@ images:
     platforms:
       - linux/amd64
       - linux/arm64
+
+  - pull_from: docker.io/gitea/gitea:latest
+    push_to: ghcr.io/pmh-only/gitea:latest
+    platforms:
+      - linux/amd64
+      - linux/arm64
+  
