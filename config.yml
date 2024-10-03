@@ -75,4 +75,10 @@ images:
     platforms:
       - linux/amd64
       - linux/arm64
+      
+  - pull_from: docker.io/docker:dind
+    push_to: ghcr.io/pmh-only/docker-dind:latest
+    platforms:
+      - linux/amd64
+      - linux/arm64
   
