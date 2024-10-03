@@ -69,5 +69,10 @@ images:
     push_to: ghcr.io/pmh-only/gitea:latest
     platforms:
       - linux/amd64
+      
+  - pull_from: docker.io/gitea/act_runner:latest
+    push_to: ghcr.io/pmh-only/gitea-runner:latest
+    platforms:
+      - linux/amd64
       - linux/arm64
   
