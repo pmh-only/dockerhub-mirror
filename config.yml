@@ -81,4 +81,10 @@ images:
     platforms:
       - linux/amd64
       - linux/arm64
+
+  - pull_from: docker.io/adminer:latest
+    push_to: ghcr.io/pmh-only/adminer:latest
+    platforms:
+      - linux/amd64
+      - linux/arm64
   
