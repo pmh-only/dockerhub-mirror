@@ -46,6 +46,12 @@ images:
     platforms:
       - linux/amd64
       - linux/arm64
+
+  - pull_from: docker.io/tensorchord/pgvecto-rs:pg14-v0.2.0
+    push_to: ghcr.io/pmh-only/pgvecto-rs:pg14-v0.2.0
+    platforms:
+      - linux/amd64
+      - linux/arm64
     
   - pull_from: docker.io/redis:alpine
     push_to: ghcr.io/pmh-only/redis:alpine
