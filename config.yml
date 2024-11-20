@@ -11,12 +11,6 @@ images:
       - linux/amd64
       - linux/arm64
 
-  - pull_from: docker.io/prom/prometheus:latest
-    push_to: ghcr.io/pmh-only/prometheus:latest
-    platforms:
-      - linux/amd64
-      - linux/arm64
-
   - pull_from: docker.io/mongo:latest
     push_to: ghcr.io/pmh-only/mongo:latest
     platforms:
