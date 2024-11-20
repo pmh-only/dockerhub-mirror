@@ -1,10 +1,4 @@
 images:
-  - pull_from: docker.io/grafana/alloy:latest
-    push_to: ghcr.io/pmh-only/alloy:latest
-    platforms:
-      - linux/amd64
-      - linux/arm64
-    
   - pull_from: docker.io/grafana/grafana-image-renderer:latest
     push_to: ghcr.io/pmh-only/grafana-image-renderer:latest
     platforms:
@@ -17,20 +11,8 @@ images:
       - linux/amd64
       - linux/arm64
 
-  - pull_from: docker.io/grafana/loki:latest
-    push_to: ghcr.io/pmh-only/loki:latest
-    platforms:
-      - linux/amd64
-      - linux/arm64
-      
-  - pull_from: docker.io/grafana/tempo:latest
-    push_to: ghcr.io/pmh-only/tempo:latest
-    platforms:
-      - linux/amd64
-      - linux/arm64
-
-  - pull_from: docker.io/grafana/mimir:latest
-    push_to: ghcr.io/pmh-only/mimir:latest
+  - pull_from: docker.io/prom/prometheus:latest
+    push_to: ghcr.io/pmh-only/prometheus:latest
     platforms:
       - linux/amd64
       - linux/arm64
@@ -65,12 +47,6 @@ images:
       - linux/amd64
       - linux/arm64
       
-  - pull_from: docker.io/collabora/code:latest
-    push_to: ghcr.io/pmh-only/collabora-code:latest
-    platforms:
-      - linux/amd64
-      - linux/arm64
-
   - pull_from: docker.io/gitea/gitea:latest
     push_to: ghcr.io/pmh-only/gitea:latest
     platforms:
@@ -85,12 +61,6 @@ images:
       
   - pull_from: docker.io/docker:dind
     push_to: ghcr.io/pmh-only/docker-dind:latest
-    platforms:
-      - linux/amd64
-      - linux/arm64
-
-  - pull_from: docker.io/adminer:latest
-    push_to: ghcr.io/pmh-only/adminer:latest
     platforms:
       - linux/amd64
       - linux/arm64
