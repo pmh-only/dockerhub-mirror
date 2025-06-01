@@ -59,8 +59,8 @@ images:
       - linux/amd64
       - linux/arm64
       
-  - pull_from: "docker.io/clickhouse/clickhouse-server:25.4.2"
-    push_to: ghcr.io/pmh-only/clickhouse-server:rybbit
+  - pull_from: docker.io/nextcloud:fpm-alpine
+    push_to: ghcr.io/pmh-only/nextcloud:fpm-alpine
     platforms:
       - linux/amd64
       - linux/arm64
