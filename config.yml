@@ -58,15 +58,3 @@ images:
     platforms:
       - linux/amd64
       - linux/arm64
-      
-  - pull_from: docker.io/nextcloud:latest
-    push_to: ghcr.io/pmh-only/nextcloud:latest
-    platforms:
-      - linux/amd64
-      - linux/arm64
-
-  - pull_from: docker.io/nocodb/nocodb:latest
-    push_to: ghcr.io/pmh-only/nocodb:latest
-    platforms:
-      - linux/amd64
-      - linux/arm64
