@@ -47,7 +47,7 @@ images:
       - linux/amd64
       - linux/arm64
       
-  - pull_from: docker.io/gitea/act_runner:latest
+  - pull_from: docker.io/gitea/act_runner:latest-dind-rootless
     push_to: ghcr.io/pmh-only/gitea-runner:latest
     platforms:
       - linux/amd64
