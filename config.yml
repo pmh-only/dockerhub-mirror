@@ -53,8 +53,8 @@ images:
       - linux/amd64
       - linux/arm64
       
-  - pull_from: docker.io/docker:dind
-    push_to: ghcr.io/pmh-only/docker-dind:latest
+  - pull_from: docker.io/memcached:alpine
+    push_to: ghcr.io/pmh-only/memcached:alpine
     platforms:
       - linux/amd64
       - linux/arm64
