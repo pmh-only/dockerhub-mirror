@@ -41,20 +41,8 @@ images:
       - linux/amd64
       - linux/arm64
       
-  - pull_from: docker.io/gitea/gitea:latest
-    push_to: ghcr.io/pmh-only/gitea:latest
-    platforms:
-      - linux/amd64
-      - linux/arm64
-      
-  - pull_from: docker.io/gitea/act_runner:latest-dind-rootless
-    push_to: ghcr.io/pmh-only/gitea-runner:latest
-    platforms:
-      - linux/amd64
-      - linux/arm64
-      
-  - pull_from: docker.io/memcached:alpine
-    push_to: ghcr.io/pmh-only/memcached:alpine
+  - pull_from: docker.io/onlyoffice/documentserver:latest
+    push_to: ghcr.io/pmh-only/onlyoffice:latest
     platforms:
       - linux/amd64
       - linux/arm64
