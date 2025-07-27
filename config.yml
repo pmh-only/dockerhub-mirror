@@ -46,3 +46,9 @@ images:
     platforms:
       - linux/amd64
       - linux/arm64
+      
+  - pull_from: docker.io/roundcube/roundcubemail:latest
+    push_to: ghcr.io/pmh-only/roundcube:latest
+    platforms:
+      - linux/amd64
+      - linux/arm64
