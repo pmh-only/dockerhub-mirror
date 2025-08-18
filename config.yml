@@ -52,3 +52,9 @@ images:
     platforms:
       - linux/amd64
       - linux/arm64
+            
+  - pull_from: "docker.io/clickhouse/clickhouse-server:25.4.2"
+    push_to: ghcr.io/pmh-only/clickhouse-server:rybbit
+    platforms:
+      - linux/amd64
+      - linux/arm64
