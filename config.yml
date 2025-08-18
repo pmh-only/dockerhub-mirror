@@ -58,3 +58,9 @@ images:
     platforms:
       - linux/amd64
       - linux/arm64
+
+  - pull_from: docker.io/allinurl/goaccess:latest
+    push_to: ghcr.io/pmh-only/goaccess:latest
+    platforms:
+      - linux/amd64
+      - linux/arm64
