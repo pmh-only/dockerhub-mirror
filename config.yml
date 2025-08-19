@@ -71,3 +71,8 @@ images:
       - linux/amd64
       - linux/arm64
 
+  - pull_from: docker.io/machines/filestash:latest
+    push_to: ghcr.io/pmh-only/filestash:latest
+    platforms:
+      - linux/amd64
+      - linux/arm64
