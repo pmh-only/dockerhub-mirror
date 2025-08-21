@@ -77,7 +77,7 @@ images:
       - linux/amd64
       - linux/arm64
 
-  - pull_from: docker.io/nginx:alpine
+  - pull_from: docker.io/openresty/openresty:alpine
     push_to: ghcr.io/pmh-only/nginx:latest
     platforms:
       - linux/amd64
