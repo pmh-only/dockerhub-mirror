@@ -16,8 +16,8 @@ unfortunately, there isn't official image yet...
 
 after a few minutes... i saw this issue called ["Did Dockerhub rate limit affect Github Action?"](https://github.com/actions/runner-images/issues/1445)
 
-and yea **there's no dockerhub rate limit in github action worker** wow...\
-then why did they put a f*cking rate limit on dockerhub?? To deceive outside users???
+and yeah, **there's no dockerhub rate limit in github action worker** wow...\
+then why did they put a f*cking rate limit on dockerhub??
 
 anyway.. i think we can **transfer dockerhub images to the github container registry (which has no rate limits) through github actions (which also not affected by dockerhub ratelimit)**
 
