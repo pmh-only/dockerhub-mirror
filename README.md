@@ -33,7 +33,4 @@ profit.
 2. Change configurations in `config.yml`
 3. **IMPORTANT** Enable Github Actions
 4. Profit.
-
-## Copyrights???
-um i donno, maybe public images are free to redistribution..\
-uhhh just in case... this is just for *educational purpose* yea.. haha
+5. 
