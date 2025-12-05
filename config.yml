@@ -82,3 +82,9 @@ images:
     platforms:
       - linux/amd64
       - linux/arm64
+
+  - pull_from: docker.io/kopia/kopia:latest
+    push_to: ghcr.io/pmh-only/kopia:latest
+    platforms:
+      - linux/amd64
+      - linux/arm64
