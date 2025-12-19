@@ -88,3 +88,10 @@ images:
     platforms:
       - linux/amd64
       - linux/arm64
+
+  - pull_from: docker.io/technitium/dns-server:latest
+    push_to: ghcr.io/pmh-only/technitium:latest
+    platforms:
+      - linux/amd64
+      - linux/arm64
+
