@@ -89,8 +89,8 @@ images:
       - linux/amd64
       - linux/arm64
 
-  - pull_from: docker.io/technitium/dns-server:latest
-    push_to: ghcr.io/pmh-only/technitium:latest
+  - pull_from: docker.io/adguard/adguardhome:latest
+    push_to: ghcr.io/pmh-only/adguardhome:latest
     platforms:
       - linux/amd64
       - linux/arm64
