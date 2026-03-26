@@ -65,6 +65,12 @@ images:
       - linux/amd64
       - linux/arm64
       
+  - pull_from: docker.io/rustfs/rustfs:latest
+    push_to: ghcr.io/pmh-only/rustfs:latest
+    platforms:
+      - linux/amd64
+      - linux/arm64
+      
   - pull_from: docker.io/busybox:musl
     push_to: ghcr.io/pmh-only/busybox:latest
     platforms:
@@ -73,12 +79,6 @@ images:
 
   - pull_from: docker.io/machines/filestash:latest
     push_to: ghcr.io/pmh-only/filestash:latest
-    platforms:
-      - linux/amd64
-      - linux/arm64
-
-  - pull_from: docker.io/openresty/openresty:alpine
-    push_to: ghcr.io/pmh-only/nginx:latest
     platforms:
       - linux/amd64
       - linux/arm64
