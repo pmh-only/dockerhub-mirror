@@ -95,3 +95,14 @@ images:
       - linux/amd64
       - linux/arm64
 
+  - pull_from: docker.io/guacamole/guacamole:1.6.0
+    push_to: ghcr.io/pmh-only/guacamole:1.6.0
+    platforms:
+      - linux/amd64
+      - linux/arm64
+    
+  - pull_from: docker.io/guacamole/guacd:1.6.0
+    push_to: ghcr.io/pmh-only/guacd:1.6.0
+    platforms:
+      - linux/amd64
+      - linux/
