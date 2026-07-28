@@ -105,4 +105,4 @@ images:
     push_to: ghcr.io/pmh-only/guacd:1.6.0
     platforms:
       - linux/amd64
-      - linux/
+      - linux/arm64
