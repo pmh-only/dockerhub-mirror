@@ -17,6 +17,12 @@ images:
       - linux/amd64
       - linux/arm64
 
+  - pull_from: docker.io/postgres:18
+    push_to: ghcr.io/pmh-only/postgres:18
+    platforms:
+      - linux/amd64
+      - linux/arm64
+
   - pull_from: docker.io/mysql:8
     push_to: ghcr.io/pmh-only/mysql:8
     platforms:
