@@ -29,8 +29,8 @@ images:
       - linux/amd64
       - linux/arm64
 
-  - pull_from: docker.io/tensorchord/pgvecto-rs:pg14-v0.2.0
-    push_to: ghcr.io/pmh-only/pgvecto-rs:pg14-v0.2.0
+  - pull_from: docker.io/imresamu/postgis:17-3.5-alpine
+    push_to: ghcr.io/pmh-only/postgis:17-3.5-alpine
     platforms:
       - linux/amd64
       - linux/arm64
